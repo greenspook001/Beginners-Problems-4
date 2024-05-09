@@ -18,3 +18,44 @@ for _ in range(number):
     
 # My third work that I have done
 
+while True:
+    number = int(input("Enter a positive interger"))
+    if number <= 0:
+        print("Not a positve integer")
+    else:
+        break
+
+print(f"Multiplication table of {number}:")
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
+
+# my fourth work that I have done
+
+number = int(input("Enter an integer: "))
+
+if number <= 1 :
+    print("Not a prime number")
+    exit()
+
+is_prime = True
+for i in range(2, int(number ** 0.5) + 1):
+    if number % i == 0:
+        is_prime = False
+        break
+
+if is_prime:
+    print(f"{number} is a prime number.")
+else:
+    print(f"{number} is not a prime number.")
+
+# my last work that I have done
+
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
